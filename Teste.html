@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempo</title>
+</head>
+
+<body>
+
+    <button onclick="tempo()">Clique</button>
+    <p id="paragrafo">
+
+    </p>
+
+    <script>
+
+        function tempo() {
+            setTimeout(x, 1000 * 5);
+            document.getElementById('paragrafo').innerHTML = "Testando...";
+            function x() {
+                document.getElementById('paragrafo').innerHTML = "";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
